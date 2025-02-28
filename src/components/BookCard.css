@@ -3,15 +3,12 @@
 .book-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
-  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 220px; /* Ensures uniform width */
 }
+
 
 .book-card:hover {
   transform: translateY(-5px);
@@ -19,10 +16,13 @@
 }
 
 .book-cover {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  width: 100%;  /* Ensures the image fits within the card */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space properly */
+  max-width: 200px; /* Adjust as needed */
+  display: block; /* Ensures visibility */
 }
+
 
 .book-details {
   padding: 16px;
